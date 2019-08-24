@@ -1,0 +1,6 @@
+Django==2.2.4
+django-environ==0.4.1
+djangorestframework==3.10.2
+pytz==2019.2
+six==1.12.0
+sqlparse==0.3.0
