@@ -1,0 +1,48 @@
+.
+├── requirements
+│   ├── test.txt
+│   ├── production.txt
+│   ├── local.txt
+│   └── base.txt
+├── project
+│   └── accounts
+│       ├── views.py
+│       ├── urls.py
+│       ├── tests.py
+│       ├── serializers.py
+│       ├── models.py
+│       ├── migrations
+│       │   └── __init__.py
+│       ├── apps.py
+│       ├── admin.py
+│       └── __init__.py
+├── manage.py
+├── links.txt
+├── filestructure.txt
+├── env.example
+├── db.sqlite3
+├── config
+│   ├── wsgi.py
+│   ├── urls.py
+│   ├── settings
+│   │   ├── test.py
+│   │   ├── production.py
+│   │   ├── local.py
+│   │   └── base.py
+│   └── __init__.py
+├── api
+│   └── v1
+│       └── account
+│           ├── views.py
+│           ├── urls.py
+│           ├── tests.py
+│           ├── serializers.py
+│           ├── models.py
+│           ├── migrations
+│           │   └── __init__.py
+│           ├── apps.py
+│           ├── admin.py
+│           └── __init__.py
+└── Pipfile
+
+10 directories, 35 files

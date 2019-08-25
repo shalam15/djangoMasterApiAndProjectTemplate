@@ -59,10 +59,14 @@ THIRD_PARTY_APPS = (
 )
 
 LOCAL_APPS = (
-    'project.api',
+    'project.accounts',
 )
 
-INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
+API_APPS = (
+    'api.v1.account',
+)
+
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS + API_APPS
 
 
 
@@ -157,4 +161,5 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = str(APPS_DIR('media'))
 
 REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'
 }
