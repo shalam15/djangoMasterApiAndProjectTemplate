@@ -1,48 +1,40 @@
 .
-├── requirements
-│   ├── test.txt
-│   ├── production.txt
-│   ├── local.txt
-│   └── base.txt
-├── project
-│   └── accounts
-│       ├── views.py
-│       ├── urls.py
-│       ├── tests.py
-│       ├── serializers.py
-│       ├── models.py
-│       ├── migrations
-│       │   └── __init__.py
-│       ├── apps.py
-│       ├── admin.py
-│       └── __init__.py
-├── manage.py
-├── links.txt
-├── filestructure.txt
-├── env.example
-├── db.sqlite3
-├── config
-│   ├── wsgi.py
+├── homepage
+│   ├── views.py
 │   ├── urls.py
-│   ├── settings
-│   │   ├── test.py
-│   │   ├── production.py
-│   │   ├── local.py
-│   │   └── base.py
+│   ├── tests.py
+│   ├── templates
+│   │   └── index.html
+│   ├── models.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── apps.py
+│   ├── admin.py
 │   └── __init__.py
-├── api
-│   └── v1
-│       └── account
-│           ├── views.py
-│           ├── urls.py
-│           ├── tests.py
-│           ├── serializers.py
-│           ├── models.py
-│           ├── migrations
-│           │   └── __init__.py
-│           ├── apps.py
-│           ├── admin.py
-│           └── __init__.py
-└── Pipfile
+├── authenticate
+│   ├── views.py
+│   ├── tests.py
+│   ├── templates
+│   │   └── registration
+│   │       ├── logout.html
+│   │       └── login.html
+│   ├── models.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── apps.py
+│   ├── admin.py
+│   └── __init__.py
+└── aboutpage
+    ├── views.py
+    ├── urls.py
+    ├── tests.py
+    ├── templates
+    │   └── about.html
+    ├── models.py
+    ├── migrations
+    │   └── __init__.py
+    ├── apps.py
+    ├── admin.py
+    └── __init__.py
 
-10 directories, 35 files
+10 directories, 27 files

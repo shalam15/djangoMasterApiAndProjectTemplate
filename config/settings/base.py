@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import environ
+import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -18,6 +19,7 @@ import environ
 # https://medium.com/@djstein/modern-django-part-1-project-refactor-and-meeting-the-django-settings-api-d2784efb606f
 ROOT_DIR = environ.Path(__file__) - 3
 APPS_DIR = ROOT_DIR.path('project')
+# TEMPLATE_DIR = ROOT_DIR.path('templates')
 
 env = environ.Env()
 # This section added from an update to standards in CookieCutter Django to ensure no errors are encountered at runserver/migrations
@@ -59,7 +61,9 @@ THIRD_PARTY_APPS = (
 )
 
 LOCAL_APPS = (
-    'project.accounts',
+    'project.homepage',
+    'project.aboutpage',
+    'project.authenticate'
 )
 
 API_APPS = (
@@ -97,6 +101,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
